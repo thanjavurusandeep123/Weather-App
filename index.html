@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Real-Time Weather</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="favicon.webp" type="image/x-icon">
+    </head>
+    <body>
+        <h1>RealTime Weather</h1>
+        <input type="text" id="search" placeholder="Search city">
+        <button onclick="getInfo()" type="button" id="search-button">Search</button>
+        <div id="loading"></div>
+        <div id="weather">
+            <div id="status">
+                ---
+            </div>
+            <div id="showTemp">
+                <div class="cont">
+                <span id="showPlace">---</span>
+                <span id="showImg"></span>
+            </div>
+                <p id="tc" >Temp: --°C</p>
+                <p id="tf">Temp: --°F</p>
+                <p id="wind">Wind: --kmph</p>
+            </div>
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
